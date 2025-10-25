@@ -1,0 +1,26 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: churn-api-ingress
+  namespace: production
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+    nginx.ingress.kubernetes.io/rate-limit: "100"
+    nginx.ingress.kubernetes.io/client-body-buffer-size: "1m"
+spec:
+  rules:
+  - host: churn-api.${DOMAIN}  # Replace with your domain
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: churn-api
+            port:
+              number: 8000
+  tls:
+  - hosts:
+    - churn-api.${DOMAIN}
+    secretName: churn-api-tls

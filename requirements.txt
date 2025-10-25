@@ -1,5 +1,31 @@
-pandas
-numpy
-wheels
-seaborn
-matplotlib
+# Core ML - Python 3.9 compatible versions
+scikit-learn==1.0.2
+xgboost==1.7.6
+pandas==1.4.4
+numpy==1.21.6
+pyarrow==10.0.1
+imbalanced-learn==0.9.1  # For SMOTE
+
+# API
+fastapi==0.95.2
+uvicorn[standard]==0.22.0
+pydantic==1.10.7
+python-multipart==0.0.6
+
+# MLOps
+mlflow==2.3.2
+boto3==1.26.137
+pyspark==3.3.2  # Compatible with Python 3.9
+
+# Monitoring
+prometheus-client==0.16.0
+datadog==0.45.0
+opentelemetry-api==1.17.0
+opentelemetry-sdk==1.17.0
+opentelemetry-instrumentation-fastapi==0.38b0
+
+# Utils
+python-dotenv==1.0.0
+pyyaml==6.0
+joblib==1.2.0
+click==8.1.3
