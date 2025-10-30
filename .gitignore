@@ -1,6 +1,9 @@
-.venv
+.venv/
 __pycache__/
 *.pyc
 .DS_Store
 airflow_env/
 .vscode/
+*.csv
+.python-version
+.ipynb_checkpoints/
