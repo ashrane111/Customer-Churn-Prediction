@@ -7,3 +7,94 @@ airflow_env/
 *.csv
 .python-version
 .ipynb_checkpoints/
+
+# Python
+__pycache__/
+
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+.venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# ML Models (Large files - consider Git LFS)
+*.pkl
+*.h5
+*.joblib
+*.model
+*.pth
+*.ckpt
+
+# Data files (Large datasets)
+*.csv
+*.parquet
+*.json
+data/raw/*.csv
+data/processed/*.parquet
+data/features/*.parquet
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# Docker
+*.tar
+*.tar.gz
+
+# AWS
+.aws/
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Airflow
+airflow.db
+airflow.cfg
+logs/
+airflow_logs/
+
+# OS
+Thumbs.db
+.DS_Store
